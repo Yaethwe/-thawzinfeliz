@@ -19,7 +19,7 @@
 				<button class="dropbtn">  ≡  </button>
 				<div class="dropdown-content">
 					<a onclick="aboutUs()">AboutUs</a>
-					<a href="shop.html" style="color:orange;">Shop</a>
+					<a onclick="shop()" style="color:orange;">Shop</a>
 					<a onclick="viewLogo()">ViewLogo</a>
 				</div>
 			</div>
@@ -32,30 +32,33 @@
 	  </div>
 </div>
 <center>
-<div id="logoViewer" class="hide">
-	<img src="logo.jpg" height="370px"><br>
-	<button class="closebtn" onclick="closeViewLogo()">close</button>
-</div>
-</center>
-<div id="aboutusDiv" class="hide">
-	<center><h1>AboutUs</h1> </center>
-	<div class="textDiv">
-		<h2>Connect Us</h2><br>
-		<h3>We Are Testing</h3>
-		<p>This Page Is Testing for <i>U Thaw Gyi</i>.</p><hr>
-		<h3>phone</h3>
-		<p>+95 9777775628</p>
-		
+	<div id="logoViewer" class="hide">
+		<img src="logo.jpg" height="370px"><br>
+		<button class="closebtn" onclick="closeViewLogo()">close</button>
 	</div>
-	<center><button class="closebtn" onclick="closeAboutUs()">close</button></center>
-</div>
+</center>
 
 <center>
-<div id="shopDiv" class="shopDiv">
-<h2>Shop</h2>
-<p>This div is not work yet because it's testing.</p>
+	<div id="aboutusDiv" class="hide">
+		<center><h1>AboutUs</h1> </center>
+		<div class="textDiv">
+			<h2>Connect Us</h2><br>
+			<h3>We Are Testing</h3>
+			<p>This Page Is Testing for <i>U Thaw Gyi</i>.</p><hr>
+			<h3>phone</h3>
+			<p>+95 9777775628</p>
+			
+		</div>
+		<center><button class="closebtn" onclick="closeAboutUs()">close</button></center>
+	</div>
+</center>
 
-<div>
+<center>
+	<div id="shopDiv" class="shopDiv">
+		<h2>Shop</h2>
+		<p>This div is not work yet because it's testing.</p>
+
+	<div>
 </center>
 
 </body>
