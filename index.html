@@ -10,26 +10,33 @@
 </style>
 <script src="scripts.js"></script>
 <div id="maindiv" class="maindiv">
-  <div id="navbar" class="navbar">
-    <input type="button" value="TZ" class="titlebtn">
-	<img src="logo.jpg" width="25px">
-	<input type="button" value="_" class="none">
-			<div class="dropdown">
-			<button class="dropbtn">  ≡  </button>
-			<div class="dropdown-content">
-				<a onclick="aboutUs()">AboutUs</a>
-				<a href="shop.html" style="color:orange;">Shop</a>
+	<img src="logo.jpg" class="logo" onclick="viewLogo()">
+	<input type="button" value="TZ" class="titlebtn">
+		
+	  <div id="navbar" class="navbar">
+		<input type="button" value="_" class="none">
+				<div class="dropdown">
+				<button class="dropbtn">  ≡  </button>
+				<div class="dropdown-content">
+					<a onclick="aboutUs()">AboutUs</a>
+					<a href="shop.html" style="color:orange;">Shop</a>
+					<a onclick="viewLogo()">ViewLogo</a>
+				</div>
 			</div>
-		</div>
-	<input type="button" value="_____ _____" class="none">
-	<input type="button" value="About Us" class="linkedbtn" onclick="aboutUs()">
-	<input type="button" value="_____ _____" class="none">
-	<input type="button" value="Shop" class="linkedbtn" onclick="shop()">
-	<input type="button" value="_____ _____" class="none">
+		<input type="button" value="_____ _____" class="none">
+		<input type="button" value="About Us" class="linkedbtn" onclick="aboutUs()">
+		<input type="button" value="_____ _____" class="none">
+		<input type="button" value="Shop" class="linkedbtn" onclick="shop()">
+		<input type="button" value="_____ _____" class="none">
 
-  </div>
+	  </div>
 </div>
 <center>
+<div id="logoViewer" class="hide">
+	<img src="logo.jpg" height="370px">
+	<button class="closebtn" onclick="closeViewLogo()">close</button>
+</div>
+</center>
 <div id="aboutusDiv" class="hide">
 	<center><h1>AboutUs</h1> </center>
 	<div class="textDiv">
@@ -43,6 +50,7 @@
 	<center><button class="closebtn" onclick="closeAboutUs()">close</button></center>
 </div>
 
+<center>
 <div id="shopDiv" class="shopDiv">
 <h2>Shop</h2>
 <p>This div is not work yet because it's testing.</p>
